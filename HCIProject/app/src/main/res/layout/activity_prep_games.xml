@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PrepGames"
+    android:background="@drawable/games"
+    android:id="@+id/r1">
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/pgback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="#FF1717"
+        android:elevation="10dp"
+        android:src="@drawable/circle_and_back"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/pgmusic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/music_and_circle"
+        android:background="@android:color/transparent"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="#79A5F2"
+        android:elevation="10dp"
+        />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/pgsettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/circle_and_settings"
+        android:background="@android:color/transparent"
+        android:layout_toLeftOf="@+id/pgmusic"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:backgroundTint="#79A5F2"
+        android:elevation="10dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingBottom="150dp"
+        >
+
+
+        <Button
+            android:id="@+id/pg1"
+            android:layout_alignParentRight="true"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/customshadowbutton"
+            android:text="1"
+            android:textColor="#3700AD"
+            android:textSize="35dp"
+            android:fontFamily="@font/gagalin"
+            android:layout_marginRight="85dp"/>
+        <Button
+            android:id="@+id/pg2"
+            android:layout_below="@+id/pg1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/customshadowbutton"
+            android:text="2"
+            android:textColor="#CC0314"
+            android:textSize="35dp"
+            android:fontFamily="@font/gagalin"
+            android:layout_marginLeft="85dp"/>
+
+        <Button
+            android:id="@+id/pg3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_below="@+id/pg2"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="85dp"
+            android:background="@drawable/customshadowbutton"
+            android:text="3"
+            android:textColor="#3700AD"
+            android:fontFamily="@font/gagalin"
+            android:textSize="35dp" />
+
+
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/poohsitting"
+        android:layout_width="179dp"
+        android:layout_height="213dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="36dp"
+        android:layout_marginBottom="19dp"
+        android:src="@drawable/pooh_sitting"></ImageView>
+
+    <ImageView
+        android:id="@+id/bluecloud"
+        android:layout_width="182dp"
+        android:layout_height="128dp"
+        android:layout_above="@+id/poohsitting"
+        android:layout_marginRight="-71dp"
+        android:layout_marginBottom="-73dp"
+        android:layout_toLeftOf="@+id/poohsitting"
+        android:src="@drawable/redcloud"></ImageView>
+
+    <TextView
+
+        android:id="@+id/choosesubject"
+        android:layout_width="95dp"
+        android:layout_height="75dp"
+        android:layout_above="@+id/poohsitting"
+        android:layout_marginBottom="-40dp"
+        android:layout_marginRight="-24dp"
+        android:layout_toLeftOf="@+id/poohsitting"
+        android:gravity="center"
+        android:text="Let's play some games!"
+        android:fontFamily="@font/atmabold"
+        android:textColor="#FDFDFD" />
+
+
+</RelativeLayout>

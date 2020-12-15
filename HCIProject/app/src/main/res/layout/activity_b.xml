@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/scene5"
+    tools:context=".B">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl2">
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="#FF1717"
+            android:elevation="10dp"
+            android:src="@drawable/circle_and_back"/>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/music"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/music_and_circle"
+            android:background="@android:color/transparent"
+            android:backgroundTint="#79A5F2"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:elevation="10dp"
+            />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/audio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/circle_and_audio"
+            android:background="@android:color/transparent"
+            android:layout_toLeftOf="@+id/music"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:backgroundTint="#79A5F2"
+            android:elevation="10dp"
+            />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/circle_and_settings"
+            android:background="@android:color/transparent"
+            android:layout_toLeftOf="@+id/audio"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:backgroundTint="#79A5F2"
+            android:elevation="10dp"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl2"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:id="@+id/l1"
+        >
+        <TextView
+            android:id="@+id/B"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/anton"
+            android:textSize="120dp"
+            android:textColor="#0C548F"
+            android:gravity="center"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/l2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/l1"
+        android:weightSum="4"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_marginLeft="5dp"
+            android:id="@+id/prev"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.5"
+            android:src="@drawable/backwardarrow"
+            app:tint="#000000"/>
+
+        <TextView
+            android:id="@+id/bear"
+            android:layout_weight="1.9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Bear"
+            android:fontFamily="@font/atmabold"
+            android:textSize="62dp"
+            android:textColor="#C2271E"
+            android:layout_marginLeft="20dp" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.1"
+            android:gravity="center"
+            android:src="@drawable/bear" />
+        <ImageView
+            android:id="@+id/farrow1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.5"
+            android:src="@drawable/forwardarrow"
+            app:tint="#000000"/>
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/shypooh"
+        android:layout_width="158dp"
+        android:layout_height="189dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/pooh_shy" />
+
+
+    <ImageView
+        android:id="@+id/bluecloud"
+        android:layout_width="159dp"
+        android:layout_height="105dp"
+        android:layout_above="@id/shypooh"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="110dp"
+        android:layout_marginBottom="-42dp"
+        android:background="@drawable/bluecloud"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/sen2"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/shypooh"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="145dp"
+        android:layout_marginBottom="-28dp"
+        android:fontFamily="@font/atmabold"
+        android:gravity="center"
+        android:text="This is a bear. Bear lives in jungle."
+        android:textColor="#3933B5"></TextView>
+
+</RelativeLayout>

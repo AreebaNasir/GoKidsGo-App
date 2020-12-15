@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".nursery_GK"
+    android:background="@drawable/scene6"
+    android:id="@+id/r1">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="#FF1717"
+        android:elevation="10dp"
+        android:src="@drawable/circle_and_back"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/music"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/music_and_circle"
+        android:background="@android:color/transparent"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="#79A5F2"
+        android:elevation="10dp"
+        />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/circle_and_settings"
+        android:background="@android:color/transparent"
+        android:layout_toLeftOf="@+id/music"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:backgroundTint="#79A5F2"
+        android:elevation="10dp"
+        />
+
+    <RelativeLayout
+        android:layout_marginTop="100dp"
+        android:layout_below="@+id/settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingBottom="100dp"
+        >
+
+        <Button
+            android:id="@+id/color"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/customshadowbutton_blue"
+            android:text="Colors"
+            android:textColor="#fff"
+            android:textSize="27dp"
+            android:fontFamily="@font/gagalin"
+            android:layout_marginLeft="15dp"/>
+        <Button
+            android:id="@+id/myself"
+            android:layout_below="@+id/color"
+            android:layout_alignParentRight="true"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/customshadowbutton_green"
+            android:text="Myself"
+            android:textColor="#ffff"
+            android:textSize="27dp"
+            android:fontFamily="@font/gagalin"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="15dp"/>
+        <Button
+            android:id="@+id/face"
+            android:layout_below="@+id/myself"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/customshadowbutton_red"
+            android:text="Face Parts"
+            android:layout_marginBottom="20dp"
+            android:textColor="#ffff"
+            android:textSize="27dp"
+            android:fontFamily="@font/gagalin"
+            android:layout_marginLeft="15dp"/>
+
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/ps1"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:src="@drawable/poohsitting_with_piglet" />
+
+    <ImageView
+        android:id="@+id/bc1"
+        android:layout_width="228dp"
+        android:layout_height="133dp"
+        android:layout_above="@+id/ps1"
+        android:layout_marginLeft="-106dp"
+        android:layout_marginBottom="-10dp"
+        android:layout_toRightOf="@+id/ps1"
+        android:src="@drawable/greencloud" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ps1"
+        android:layout_marginLeft="-55dp"
+        android:layout_marginBottom="35dp"
+        android:layout_toRightOf="@+id/ps1"
+        android:fontFamily="@font/atmabold"
+        android:gravity="center"
+        android:text="Let's learn about\nour self."
+        android:textColor="#384D04" />
+
+
+</RelativeLayout>

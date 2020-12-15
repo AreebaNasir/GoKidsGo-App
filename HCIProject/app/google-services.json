@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "465848245495",
+    "firebase_url": "https://gokidsgo-42c03.firebaseio.com",
+    "project_id": "gokidsgo-42c03",
+    "storage_bucket": "gokidsgo-42c03.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:465848245495:android:bb50f58012c417213787f2",
+        "android_client_info": {
+          "package_name": "com.areeba.hciproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "465848245495-jqmuq2ggrgvo0n7dkj1o6lujne33bsfr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBk1TCdguDaRURzdvXgM8cvzCuIEnA9cT0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "465848245495-jqmuq2ggrgvo0n7dkj1o6lujne33bsfr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

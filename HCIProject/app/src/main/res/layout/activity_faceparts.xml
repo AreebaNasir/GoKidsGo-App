@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/scene7"
+    tools:context=".faceparts">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl2">
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="#FF1717"
+            android:elevation="10dp"
+            android:src="@drawable/circle_and_back"/>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/music"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/music_and_circle"
+            android:background="@android:color/transparent"
+            android:backgroundTint="#79A5F2"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:elevation="10dp"
+            />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/audio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/circle_and_audio"
+            android:background="@android:color/transparent"
+            android:layout_toLeftOf="@+id/music"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:backgroundTint="#79A5F2"
+            android:elevation="10dp"
+            />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/circle_and_settings"
+            android:background="@android:color/transparent"
+            android:layout_toLeftOf="@+id/audio"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:backgroundTint="#79A5F2"
+            android:elevation="10dp"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginTop="80dp"
+        android:layout_below="@+id/rl2"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:weightSum="2"
+        android:id="@+id/l1"
+        >
+    <ImageView
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/customshadowbutton_skin"
+        android:src="@drawable/eye" />
+
+        <TextView
+            android:id="@+id/eye"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Eye"
+            android:textSize="50dp"
+            android:background="@drawable/customshadowbutton_pink"
+            android:fontFamily="@font/gagalin"
+            android:textColor="#fff"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:weightSum="2"
+        android:id="@+id/l2"
+        >
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/customshadowbutton_skin"
+            android:src="@drawable/ear" />
+
+        <TextView
+            android:id="@+id/ear"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="EAR"
+            android:textSize="50dp"
+            android:background="@drawable/customshadowbutton_pink"
+            android:fontFamily="@font/gagalin"
+            android:textColor="#fff"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/arrows"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/l2"
+        android:weightSum="2">
+        <ImageView
+            android:id="@+id/barrow1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="375dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2"
+            android:src="@drawable/backwardarrow"
+            app:tint="#FFF"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/l2"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:weightSum="2"
+        android:id="@+id/l3"
+        >
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/customshadowbutton_skin"
+            android:src="@drawable/nose" />
+
+        <TextView
+            android:id="@+id/nose"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Nose"
+            android:textSize="50dp"
+            android:background="@drawable/customshadowbutton_pink"
+            android:fontFamily="@font/gagalin"
+            android:textColor="#fff"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/l3"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:weightSum="2"
+        android:id="@+id/l4"
+        >
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/customshadowbutton_skin"
+            android:src="@drawable/lips" />
+
+        <TextView
+            android:id="@+id/lips"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="LIPS"
+            android:textSize="50dp"
+            android:background="@drawable/customshadowbutton_pink"
+            android:fontFamily="@font/gagalin"
+            android:textColor="#fff"/>
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/ps1"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:src="@drawable/poohpointing" />
+
+    <ImageView
+        android:id="@+id/bc2"
+        android:layout_width="228dp"
+        android:layout_height="133dp"
+        android:layout_above="@+id/ps1"
+        android:layout_marginLeft="-106dp"
+        android:layout_marginBottom="-10dp"
+        android:layout_toRightOf="@+id/ps1"
+        android:src="@drawable/marooncloud" />
+
+    <TextView
+        android:id="@+id/sen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ps1"
+        android:layout_marginLeft="-50dp"
+        android:layout_marginBottom="40dp"
+        android:layout_toRightOf="@+id/ps1"
+        android:fontFamily="@font/atmabold"
+        android:gravity="center"
+        android:text="Let's learn about\nface parts"
+        android:textColor="#ffff"
+        android:textSize="15dp" />
+
+</RelativeLayout>

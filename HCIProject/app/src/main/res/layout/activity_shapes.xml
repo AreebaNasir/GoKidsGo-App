@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/scene4"
+    tools:context=".One">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl1">
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/shapes_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="#FF1717"
+            android:elevation="10dp"
+            android:src="@drawable/circle_and_back"/>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/shapes_music"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/music_and_circle"
+            android:background="@android:color/transparent"
+            android:backgroundTint="#79A5F2"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:elevation="10dp"
+            />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/audio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/circle_and_audio"
+            android:background="@android:color/transparent"
+            android:layout_toLeftOf="@+id/shapes_music"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:backgroundTint="#79A5F2"
+            android:elevation="10dp"
+            />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/shapes_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/circle_and_settings"
+            android:background="@android:color/transparent"
+            android:layout_toLeftOf="@+id/audio"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:backgroundTint="#79A5F2"
+            android:elevation="10dp"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/shapeslayout"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:orientation="vertical"
+        android:layout_below="@id/rl1"
+        android:layout_marginTop="90dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        >
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_marginTop="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/pink_rectangle"
+            android:id="@+id/shape1ll"
+            android:weightSum="2"
+            >
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/shape_triangle"
+                android:layout_weight="1"
+                >
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/tri"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:text="TRIANGLE"
+                android:textColor="#000"
+                android:layout_weight="1"
+                >
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/pink_rectangle"
+            android:id="@+id/shape2ll"
+            android:weightSum="2"
+            >
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/shape_circle"
+                >
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/cir"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:text="CIRCLE   "
+                android:textColor="#000"
+                android:layout_weight="1"
+                >
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/pink_rectangle"
+            android:id="@+id/shape3ll"
+            android:weightSum="2"
+            >
+
+            <ImageView
+
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/shape_diamond"
+                android:gravity="center"
+                >
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/dia"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:text="DIAMOND"
+                android:textColor="#000"
+                android:layout_weight="1"
+                android:gravity="center"
+                >
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/pink_rectangle"
+            android:id="@+id/shape4ll"
+            android:weightSum="2"
+            >
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/shape_square"
+                android:gravity="center"
+                >
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/sqr"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:text="SQUARE  "
+                android:textColor="#000"
+                android:layout_weight="1"
+                android:gravity="center"
+                >
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/pink_rectangle"
+            android:id="@+id/shape5ll"
+            android:weightSum="2"
+            >
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:src="@drawable/shape_rectangle"
+                android:gravity="center"
+                >
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/rec"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:text="RECTANGLE"
+                android:textColor="#000"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                >
+
+            </TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/ps1"
+            android:layout_width="133dp"
+            android:layout_height="144dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="11dp"
+            android:layout_marginBottom="57dp"
+            android:src="@drawable/pooh_sitting" />
+
+        <ImageView
+            android:id="@+id/redcloud"
+            android:layout_width="210dp"
+            android:layout_height="148dp"
+            android:layout_above="@+id/ps1"
+            android:layout_marginRight="-82dp"
+            android:layout_marginBottom="-120dp"
+            android:layout_toLeftOf="@+id/ps1"
+            android:src="@drawable/redcloud">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="91dp"
+            android:layout_above="@+id/ps1"
+            android:layout_marginRight="-20dp"
+            android:layout_marginBottom="-90dp"
+            android:layout_toLeftOf="@+id/ps1"
+            android:fontFamily="@font/atmabold"
+            android:gravity="center"
+            android:text="How many shapes do you know about"
+            android:textColor="#FCFBFD" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

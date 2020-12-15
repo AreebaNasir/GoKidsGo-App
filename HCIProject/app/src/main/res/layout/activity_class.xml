@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:background="@drawable/scene1">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/myprofile"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:elevation="10dp"
+        android:layout_marginLeft="10dp"/>
+
+    <ImageView
+        android:id="@+id/sunrays"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/sunrays" />
+
+    <TextView
+        android:id="@+id/appname1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-12dp"
+        android:layout_below="@+id/sunrays"
+        android:text="Go"
+        android:layout_toLeftOf="@id/appname2"
+        android:textColor="#E6850E"
+        android:textSize="35dp"
+        android:fontFamily="@font/gagalin" />
+    <TextView
+        android:id="@+id/appname2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sunrays"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="-12dp"
+        android:text="Kids"
+        android:textColor="#C11F15"
+        android:textSize="35dp"
+        android:fontFamily="@font/gagalin" />
+    <TextView
+        android:id="@+id/appname3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sunrays"
+        android:layout_toRightOf="@id/appname2"
+        android:layout_marginTop="-12dp"
+        android:text="Go"
+        android:textColor="#E6850E"
+        android:textSize="35dp"
+        android:fontFamily="@font/gagalin" />
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/redcloud"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/appname1"
+        >
+        <Button
+            android:id="@+id/nursery"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/customshadowbutton"
+            android:text="NURSERY"
+            android:textSize="27dp"
+            android:fontFamily="@font/gagalin"
+            android:textColor="#CC0314"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            />
+        <Button
+            android:id="@+id/prep"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/customshadowbutton"
+            android:text="PREP"
+            android:layout_marginLeft="20dp"
+            android:textSize="27dp"
+            android:textColor="#CC0314"
+            android:fontFamily="@font/gagalin"
+            android:layout_marginTop="70dp"
+            />
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/standingpooh"
+        android:layout_width="158dp"
+        android:layout_height="189dp"
+        android:layout_marginBottom="10dp"
+       android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/poohstanding" />
+
+
+    <ImageView
+        android:id="@+id/redcloud"
+        android:layout_width="159dp"
+        android:layout_height="105dp"
+        android:layout_above="@id/standingpooh"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="110dp"
+        android:layout_marginBottom="-42dp"
+        android:background="@drawable/redcloud"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/sen2"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/standingpooh"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="141dp"
+        android:layout_marginBottom="-15dp"
+        android:fontFamily="@font/atmabold"
+        android:gravity="center"
+        android:textColor="#ffff"
+        android:text="Choose Your Class"></TextView>
+
+</RelativeLayout>

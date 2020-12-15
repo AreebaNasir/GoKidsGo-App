@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/myprofile"
+    tools:context=".MyProfile">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="#FF1717"
+        android:elevation="10dp"
+        android:src="@drawable/circle_and_back"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/showimage"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:background="@drawable/gray_circle"
+        android:src="@drawable/userimage"
+        android:elevation="15dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/showimage"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:weightSum="7"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="5dp"
+            >
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="Name"
+                android:textColor="#000"
+                android:textSize="22dp"
+                android:fontFamily="@font/atmabold"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="5dp"
+                >
+                <TextView
+                    android:id="@+id/firstname"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/grayrectangle"
+                    android:layout_marginRight="10dp"
+                    android:hint="First Name"
+                    android:textSize="19dp"
+                    android:inputType="text"
+                    android:padding="5dp"
+                    android:textColor="#FFFFFF"
+
+                    />
+                <TextView
+                    android:id="@+id/lastname"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/grayrectangle"
+                    android:layout_marginLeft="10dp"
+                    android:hint="Last Name"
+                    android:textSize="19dp"
+                    android:padding="5dp"
+                    android:inputType="text"
+                    android:textColor="#FFFFFF"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="Date of Birth"
+                android:textColor="#000"
+                android:textSize="22dp"
+
+                android:fontFamily="@font/atmabold"
+                />
+
+            <TextView
+                android:id="@+id/dob"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColor="#FFFFFF"
+                android:gravity="center_vertical"
+                android:background="@drawable/grayrectangle"
+                android:layout_marginTop="3dp"
+                android:layout_weight="1"
+                android:hint="DD/MM/YY"
+                android:inputType="text"
+                android:textSize="19dp"/>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="5dp"
+            >
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="Gender"
+                android:textColor="#000"
+                android:textSize="22dp"
+                android:fontFamily="@font/atmabold"
+                />
+            <LinearLayout
+                android:layout_marginTop="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="5dp"
+                >
+                <TextView
+                    android:id="@+id/gender"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:textSize="19dp"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/grayrectangle"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="5dp"
+            >
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="Phone Number"
+                android:textColor="#000"
+                android:textSize="22dp"
+                android:fontFamily="@font/atmabold"
+                />
+            <TextView
+                android:id="@+id/phno"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/grayrectangle"
+                android:layout_marginTop="3dp"
+                android:layout_weight="1"
+                android:hint="03001231231"
+                android:inputType="phone"
+                android:textColor="#FFFFFF"
+                android:textSize="19dp"/>
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/grayrectangle"
+            android:textColor="#000"
+            android:textSize="22dp"
+            android:fontFamily="@font/atmabold"
+            android:layout_marginTop="10dp"
+            android:text="Log out"
+            android:layout_marginLeft="100dp"
+            />
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

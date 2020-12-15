@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#79A5F2"
+        android:id="@+id/rl"
+        >
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:fontFamily="@font/atmabold"
+            android:layout_centerInParent="true"
+            android:text="Settings"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="#FFFFFF"/>
+        <ImageView
+            android:id="@+id/maincancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/cancel"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:background="#B7F86B"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:padding="16dp">
+
+     <LinearLayout
+
+         android:orientation="horizontal"
+         android:layout_width="match_parent"
+         android:layout_height="80dp"
+         android:weightSum="4">
+         <ImageView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"/>
+         <ImageView
+             android:id="@+id/dmusic"
+             android:layout_width="wrap_content"
+             android:layout_height="60dp"
+             android:layout_weight="1"
+             android:src="@drawable/dmusic"
+
+             />
+         <ImageView
+             android:id="@+id/daudio"
+             android:layout_width="wrap_content"
+             android:layout_height="60dp"
+             android:layout_weight="1"
+             android:src="@drawable/daudio"
+
+
+             />
+         <ImageView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             />
+
+     </LinearLayout>
+
+        <Button
+            android:id="@+id/buttoncancel"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/pink_rectangle"
+            android:text="cancel"
+            android:textSize="16dp"
+            android:fontFamily="@font/atmabold"
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
+
+</LinearLayout>

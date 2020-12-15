@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/scene4"
+    tools:context=".Religion">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl1">
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/religion_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="#FF1717"
+            android:elevation="10dp"
+            android:src="@drawable/circle_and_back"/>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/religion_music"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/music_and_circle"
+            android:background="@android:color/transparent"
+            android:backgroundTint="#79A5F2"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:elevation="10dp"
+            />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/audio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/circle_and_audio"
+            android:background="@android:color/transparent"
+            android:layout_toLeftOf="@+id/religion_music"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:backgroundTint="#79A5F2"
+            android:elevation="10dp"
+            />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/religion_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/circle_and_settings"
+            android:background="@android:color/transparent"
+            android:layout_toLeftOf="@+id/audio"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:backgroundTint="#79A5F2"
+            android:elevation="10dp"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/religionlayout"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:orientation="vertical"
+        android:layout_below="@id/rl1"
+        android:layout_marginTop="90dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:weightSum="4"
+        >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3.5"
+            android:id="@+id/religionrv"
+
+            />
+        <ImageView
+            android:layout_weight="0.5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:src="@drawable/downarrow"
+            app:tint="#000"
+            />
+
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

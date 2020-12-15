@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:background="@drawable/scene1">
+
+
+    <ImageView
+        android:id="@+id/sunrays"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:src="@drawable/sunrays"
+        />
+
+    <TextView
+        android:id="@+id/appname1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-12dp"
+        android:layout_below="@+id/sunrays"
+        android:text="Go"
+        android:layout_toLeftOf="@id/appname2"
+        android:textColor="#E6850E"
+        android:textSize="35dp"
+        android:fontFamily="@font/gagalin" />
+    <TextView
+        android:id="@+id/appname2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sunrays"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="-12dp"
+        android:text="Kids"
+        android:textColor="#C11F15"
+        android:textSize="35dp"
+        android:fontFamily="@font/gagalin" />
+    <TextView
+        android:id="@+id/appname3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sunrays"
+        android:layout_toRightOf="@id/appname2"
+        android:layout_marginTop="-12dp"
+        android:text="Go"
+        android:textColor="#E6850E"
+        android:textSize="35dp"
+        android:fontFamily="@font/gagalin" />
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appname2"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+
+        <TextView
+            android:id="@+id/eemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|left"
+            android:layout_marginBottom="10dp"
+            android:text="EMAIL"
+            android:textColor="#C11F15"
+            android:textSize="20dp"
+            android:fontFamily="@font/atmabold" />
+
+        <EditText
+            android:id="@+id/email"
+            android:textColor="#000000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/customshadow"
+            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="PASSWORD"
+            android:textSize="20dp"
+            android:textColor="#C11F15"
+            android:fontFamily="@font/atmabold"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+
+            />
+
+        <EditText
+            android:textColor="#000000"
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/customshadow"
+            android:inputType="textPassword"
+            android:padding="10dp"/>
+            />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear1"
+        >
+        <Button
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log in"
+            android:textSize="20dp"
+            android:fontFamily="@font/atmabold"
+            android:background="@drawable/redbutton"
+            android:layout_centerInParent="true"
+            />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/ps"
+        android:layout_width="94dp"
+        android:layout_height="189dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="37dp"
+        android:layout_marginBottom="0dp"
+        android:src="@drawable/poohstanding" />
+
+    <ImageView
+        android:id="@+id/redc1"
+        android:layout_width="181dp"
+        android:layout_height="108dp"
+        android:layout_above="@+id/ps"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="-44dp"
+        android:layout_marginBottom="-63dp"
+        android:layout_toLeftOf="@+id/ps"
+        android:src="@drawable/redcloud" />
+
+    <TextView
+        android:id="@+id/sen1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ps"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="-24dp"
+        android:fontFamily="@font/atmabold"
+        android:text="WELCOME"
+        android:textColor="#ffff"
+        android:layout_toLeftOf="@+id/ps"
+        android:textSize="20dp" />
+
+
+</RelativeLayout>
