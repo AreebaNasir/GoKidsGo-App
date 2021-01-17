@@ -6,13 +6,13 @@ GoKidsGo is an android application inspired by the concept of introducing kids t
 The primary goal of GoKidsGo is to provide young students (3-5 age group) with a wonderful platform for learning where they can seek new ideas and insights about topics. GoKidsGo will have striking colors and images which will help in increasing the engagement of little learners, as in practice, children are more motivated to learn when they see an interactive and colorful screen in comparison to a boring black and whilte image on paper. Moreover, children of the above age group are always attracted towards adventures so the application will also have interactive games according to the child’s intellectual level.  
 
 ## Instructions  
-************HOW TO RUN THE CODE************
+************HOW TO RUN THE CODE************  
 
--REQUIREMENTS
+-REQUIREMENTS  
  --You must have internet connection as the application is linked with Firebase server.
  --You must have Android Studio to run the code
- --You must have Android phone if you are running the application directly on your phone. The application does not support IOS.
-
+ --You must have Android phone if you are running the application directly on your phone. The application does not support IOS.  
+ 
 -STEPS
  1. Open the Android Studio.
  2. Go to File --> Open in the menu bar.
