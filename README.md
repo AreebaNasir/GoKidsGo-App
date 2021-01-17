@@ -9,8 +9,8 @@ The primary goal of GoKidsGo is to provide young students (3-5 age group) with a
 ************HOW TO RUN THE CODE************  
 
 -REQUIREMENTS  
- --You must have internet connection as the application is linked with Firebase server.
- --You must have Android Studio to run the code
+ --You must have internet connection as the application is linked with Firebase server.  
+ --You must have Android Studio to run the code  
  --You must have Android phone if you are running the application directly on your phone. The application does not support IOS.  
  
 -STEPS
